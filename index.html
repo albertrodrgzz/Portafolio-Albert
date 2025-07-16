@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albert Rodriguez | Futurist Dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+ 
+
+    <!-- Header Flotante -->
+    <header class="glass">
+        <h1 data-text="ALBERT_RODRIGUEZ">ALBERT_RODRIGUEZ</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero con Efecto Neon -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2><span class="typed-text"></span><span class="cursor-blink">|</span></h2>
+            <p>Computer Science Student & Future Innovator</p>
+            <div class="scrolldown">
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+       <!-- Cursor Personalizado -->
+    <div class="cursor"></div>
+
+
+    <!-- Sección About -->
+    <section id="about" class="glass">
+    <div class="about-container">
+        <h3><span class="highlight">About</span> Me</h3>
+        <div class="about-content">
+            <div class="about-text">
+                <p class="intro">¡Hola! Soy <strong>Albert Rodriguez</strong>, estudiante de Informática apasionado por la tecnología y desarrollo web.</p>
+                <p>Actualmente enfocado en:</p>
+                <ul class="focus-list">
+                    <li>Inteligencia Artificial</li>
+                    <li>Desarrollo Full-Stack</li>
+                    <li>Diseño de Interfaces Futuristas</li>
+                </ul>
+            </div>
+            <div class="skills-section">
+                <h4>Skills</h4>
+                <div class="skills-grid">
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Projects con Tarjetas Hover -->
+    <section id="projects">
+    <div class="projects-container">
+        <h3>My <span class="highlight">Projects</span></h3>
+        
+        <!-- Filtro de Tecnologías -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="ai">AI</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+        </div>
+
+        <!-- Grid de Proyectos -->
+        <div class="projects-grid">
+            <!-- Proyecto 1 -->
+            <div class="project-card" data-category="web">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/web-project.jpg" alt="Web Project" class="project-img">
+                        <h4>E-commerce React</h4>
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h4>E-commerce React</h4>
+                        <p>Plataforma full-stack con carrito de compras y autenticación.</p>
+                        <a href="#" class="project-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="project-card" data-category="ai">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/ai-project.jpg" alt="AI Project" class="project-img">
+                        <h4>Predictor de Stocks</h4>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h4>Predictor de Stocks</h4>
+                        <p>Modelo de ML que predice tendencias bursátiles con 85% de precisión.</p>
+                        <a href="#" class="project-link" target="_blank">View Code <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Más proyectos... -->
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Minimalista -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2023 Albert Rodriguez. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
